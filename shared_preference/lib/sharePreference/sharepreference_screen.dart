@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart'
+    show SharedPreferences;
 
 class SharepreferenceScreen extends StatefulWidget {
   SharepreferenceScreen({super.key});
@@ -31,7 +32,7 @@ class _SharepreferenceScreenState extends State<SharepreferenceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        // backgroundColor: Colors.red,
         title: Text(
           'Shared Preference..',
           style: TextStyle(color: Colors.white),
