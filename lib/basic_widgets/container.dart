@@ -11,14 +11,19 @@ class ContainerWidgets extends StatelessWidget {
         title: Text(
           'Container',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 23,
+            fontWeight: FontWeight.bold,
             color: Colors.redAccent,
           ),
         ),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
+            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(border: Border.all()),
             child: Text(
               'Hey I am Container ',
               style: TextStyle(
@@ -26,6 +31,9 @@ class ContainerWidgets extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                   color: Colors.amber),
             ),
+          ),
+          SizedBox(
+            height: 12,
           ),
           Container(
             width: 121,
