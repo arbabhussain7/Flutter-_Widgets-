@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preference/basic_widgets/container.dart';
-import 'package:shared_preference/reordeeListview/reorder_listview_builder.dart';
+import 'package:shared_preference/checkConnection/internet_connection_check.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +13,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
-          appBarTheme: AppBarTheme(color: Colors.lightBlueAccent),
+          appBarTheme: const AppBarTheme(color: Colors.lightBlueAccent),
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ContainerWidgets());
+        home: InternetConnectionCheck());
   }
 }
