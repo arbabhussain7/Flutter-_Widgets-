@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preference/checkConnection/internet_connection_check.dart';
+import 'package:shared_preference/interactiveImg/interactive_img.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: InternetConnectionCheck());
+        home: InteractiveImg());
   }
 }
