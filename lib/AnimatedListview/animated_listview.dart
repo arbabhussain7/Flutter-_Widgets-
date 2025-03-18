@@ -49,9 +49,11 @@ class _AnimatedListviewState extends State<AnimatedListview> {
                 width: double.infinity,
                 child: Card(
                   color: Colors.primaries[index],
-                  child: Text(
-                    'item ${item[index]}',
-                    style: Theme.of(context).textTheme.headlineMedium,
+                  child: Center(
+                    child: Text(
+                      'I am List  ${item[index]}',
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ),
