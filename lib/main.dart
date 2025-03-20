@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preference/AnimatedListview/animated_listview.dart';
-import 'package:shared_preference/basic_widgets/row.dart';
-import 'package:shared_preference/checkConnection/internet_connection_check.dart';
-import 'package:shared_preference/interactiveImg/interactive_img.dart';
+import 'package:shared_preference/ShaderMask/shader_mask.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +17,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: RowWidges());
+        home: ShaderMaskWidgest());
   }
 }
