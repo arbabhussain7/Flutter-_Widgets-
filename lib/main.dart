@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preference/ShaderMask/shader_mask.dart';
+import 'package:shared_preference/liquidSwipe/liquid_swipe.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +17,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ShaderMaskWidgest());
+        home: LiquidSwipeWidgets());
   }
 }
