@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preference/basic_widgets/about_dialog.dart';
 import 'package:shared_preference/compressImg/compress_img_widgets.dart';
 
 void main() {
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: CompressImgWidgets());
+        home: AboutDialogWidgets());
   }
 }
