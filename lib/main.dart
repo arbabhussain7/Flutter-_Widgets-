@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:shared_preference/animatedWidgets/animated_align_widgets.dart';
 import 'package:shared_preference/animatedWidgets/animated_builder_widgets.dart';
 import 'package:shared_preference/animatedWidgets/animated_container.dart';
@@ -11,8 +12,10 @@ import 'package:shared_preference/basic_widgets/absorb_pointer_widgtes.dart';
 import 'package:shared_preference/basic_widgets/alert_dialog_widgets.dart';
 import 'package:shared_preference/basic_widgets/image_widgets.dart';
 import 'package:shared_preference/compressImg/compress_img_widgets.dart';
+import 'package:shared_preference/local%20storage/local_storages.dart';
 
-void main() {
+void main() async {
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -28,6 +31,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ImageWidgets());
+        home: LocalStoragesWidgets());
   }
 }
